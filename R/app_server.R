@@ -19,7 +19,7 @@ app_server <- function(input, output, session) {
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     
     # Draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white',
+    hist(x, breaks = bins, col = 'blue', border = 'white',
          main = 'Histogram of Old Faithful Eruptions',
          xlab = 'Duration of Eruption (minutes)')
   })
